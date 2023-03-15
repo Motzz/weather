@@ -4,10 +4,16 @@ import "./index.css";
 // import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import MyRoutes from "./Ruter/MyRoutes";
+import RuterLanding from "./Ruter/RuterLanding";
+import { BrowserRouter as Router, Routes, Route, Link, useLocation, useNavigate, useParams } from "react-router-dom";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
-    <MyRoutes />
+    <Router>
+      <RuterLanding />
+    </Router>
   </React.StrictMode>
 );
 
